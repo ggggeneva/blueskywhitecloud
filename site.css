@@ -261,3 +261,22 @@ img{
   bottom: 15%;
   right: 32%;
 }
+
+.bw-character--scattered{
+}
+
+.bw-character--scattered .bw-character--tian-1{
+  transform: translateX(300px) translateY(-100px) rotate(15deg);
+}
+
+.bw-character--scattered .bw-character--tian-2{
+  transform: translateX(-100px) translateY(300px) rotate(0deg);
+}
+
+.bw-character--scattered .bw-character--tian-3{
+  transform: translateX(-350px) translateY(-200px) rotate(0deg);
+}
+
+.bw-character--scattered .bw-character--tian-4{
+  transform: translateX(600px) translateY(400px) rotate(0deg);
+}

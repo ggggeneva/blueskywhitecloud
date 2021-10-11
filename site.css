@@ -2,6 +2,12 @@ img{
   width: 100%;
 }
 
+body{
+  background-image: url(./images/bluesky.jpg);
+  background-size: cover;
+  background-color: lightblue;
+}
+
 .bw-character{
   width: 200px;
   height:200px;

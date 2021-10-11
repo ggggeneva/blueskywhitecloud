@@ -9,7 +9,7 @@
   <link rel="shortcut icon" type="image/png" href="favicon.png">
 </head>
 <body class="bw-character--scattered">
-  <div class="bw-character bw-character--blue">
+  <div id="box-character-blue" class="bw-character bw-character--blue">
     <!-- <div class="template">
       <img src="./images/lantemplate.jpg" alt="">
     </div> -->
@@ -147,4 +147,14 @@
   </div>
 
 </body>
+<script type="text/javascript">
+  (function() {
+    document.getElementById("box-character-blue").onmouseenter = function(){
+      document.body.classList.remove('bw-character--scattered');
+    };
+    document.getElementById("box-character-blue").onmouseleave = function(){
+      document.body.classList.add('bw-character--scattered');
+    };
+  })();
+</script>
 </html>

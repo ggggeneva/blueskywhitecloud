@@ -12,11 +12,53 @@ body{
 .bw-character{
   width: 200px;
   height:200px;
-  border: 1px solid blue;
   margin-top: 15%;
   margin-right: 15px;
   float: left;
   position: relative;
+  background-color: white;
+}
+
+.bw-rice-grid-position{
+  position: absolute;
+}
+
+.bw-rice-grid-border{
+  border: 1px solid red;
+}
+
+.bw-rice-grid--horizontal{
+  width: 200px;
+  height: 0.5px;
+  top: 50%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.bw-rice-grid--vertical{
+  width: 0.5px;
+  height: 200px;
+  left: 50%;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+}
+
+.bw-rice-grid--diagonal{
+  width: 282.8px;
+  height: 0.5px;
+  top: 50%;
+  right: -21%;
+  border-bottom: 1px dashed red;
+}
+
+.bw-rice-grid--diagonal-left{
+  transform: rotate(45deg);
+}
+
+.bw-rice-grid--diagonal-right{
+  transform: rotate(135deg);
 }
 
 .bw-character--blue{

@@ -18,7 +18,7 @@ body{
 }
 
 *{
-  transition: 6s all ease;
+  transition: 3.5s all ease;
 }
 
 .bw-character-container{
@@ -88,7 +88,7 @@ body{
 
 .bw-character--cloud{
 }
-
+/* combined position */
 .bw-character--stroke{
   position: absolute;
   pointer-events: none;
@@ -327,23 +327,23 @@ body{
   bottom: 15%;
   right: 30%;
 }
-
-.bw-character--scattered-blue * {
+/* no transition from combined to scattered */
+.bw-character--scattered-blue .bw-character--blue * {
   transition: none;
 }
 
-/* .bw-character--scattered-sky *{
+.bw-character--scattered-sky .bw-character--sky *{
   transition: none;
 }
 
-.bw-character--scattered-white *{
+.bw-character--scattered-white .bw-character--white *{
   transition: none;
 }
 
-.bw-character--scattered-cloud *{
+.bw-character--scattered-cloud .bw-character--cloud *{
   transition: none;
-} */
-
+}
+/* scattered position */
 .bw-character--scattered-blue .bw-character--lan-1{
   transform: translateX(-300px) translateY(250px);
 }

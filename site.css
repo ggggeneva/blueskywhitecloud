@@ -7,12 +7,28 @@ body{
   background-size: cover;
   background-color: lightblue;
   background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+*{
+  transition: 6s all ease;
+}
+
+.bw-character-container{
+  width: 868px;
+  z-index: 1;
 }
 
 .bw-character{
   width: 200px;
   height:200px;
-  margin-top: 15%;
   margin-right: 15px;
   float: left;
   position: relative;
@@ -62,7 +78,6 @@ body{
 }
 
 .bw-character--blue{
-  margin-left: 20%;
 }
 
 .bw-character--sky{
@@ -77,6 +92,7 @@ body{
 .bw-character--stroke{
   position: absolute;
   pointer-events: none;
+  z-index: 2;
 }
 
 .template{
@@ -312,8 +328,21 @@ body{
   right: 30%;
 }
 
-.bw-character--scattered{
+.bw-character--scattered-blue * {
+  transition: none;
 }
+
+/* .bw-character--scattered-sky *{
+  transition: none;
+}
+
+.bw-character--scattered-white *{
+  transition: none;
+}
+
+.bw-character--scattered-cloud *{
+  transition: none;
+} */
 
 .bw-character--scattered-blue .bw-character--lan-1{
   transform: translateX(-300px) translateY(250px);
@@ -465,4 +494,11 @@ body{
 
 .bw-character--scattered-cloud .bw-character--yun-12{
   transform: translateX(-1000px) translateY(-350px);
+}
+
+@media only screen and (max-width:600px) {
+  .bw-character{
+    width: ;
+    height: ;
+  }
 }

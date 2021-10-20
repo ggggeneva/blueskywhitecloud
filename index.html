@@ -174,11 +174,17 @@
       <div class="bw-character--yun-11 bw-character--stroke">
         <img src="./images/yun/yun-11.png" alt="">
       </div>
-      <div class="bw-character--yun-12 bw-character--stroke">
+      <div id="yun-12" class="bw-character--yun-12 bw-character--stroke">
         <img src="./images/yun/yun-12.png" alt="">
       </div>
     </div>
+    <div class="bw-special">
+      <div id="special-brushstroke" class="bw-special-brushstroke">
+        <img src="./images/special.png" alt="">
+      </div>
+    </div>
   </div>
+
 </body>
 
 <script type="text/javascript">
@@ -206,6 +212,12 @@
     };
     document.getElementById("box-character-cloud").onmouseleave = function(){
       document.body.classList.add('bw-character--scattered-cloud');
+    };
+    document.getElementById("special-brushstroke").onclick = function(){
+     document.body.classList.remove('bw-character--scattered-blue');
+     document.body.classList.remove('bw-character--scattered-sky');
+     document.body.classList.remove('bw-character--scattered-white');
+     document.body.classList.remove('bw-character--scattered-cloud');
     };
   })();
 </script>
